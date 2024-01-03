@@ -1,5 +1,7 @@
 import React from "react";
 import homeData from "@/data/homeData";
+import Image from "next/image";
+import logohomedata from "@/data/logoHomeData";
 
 const home = () => {
   return (
@@ -36,6 +38,18 @@ const home = () => {
         <p className="text-lg">
           Voici les langages,frameworks etc...que j&apos;utilise{" "}
         </p>
+        <div>
+          {logohomedata.map((logo) => (
+            <div key={logo.id}>
+              <Image
+                src={logo.src}
+                alt={logo.alt} 
+                width={100} 
+                height={100} 
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <div>
         <h1 className="text-3xl font-bold mb-4">
