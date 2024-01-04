@@ -1,56 +1,39 @@
+"use client";
 import React from "react";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const Contact = () => {
+const ContactPage = () => {
+  const email = "maximilien.thiry1@gmail.com";
+
   return (
     <Box
-      component="form"
       sx={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-      }}
-      noValidate
-      autoComplete="off"
-      className="p-4 max-w-lg mx-auto">
-      <div className="w-full mb-4">
-        <TextField
-          required
-          fullWidth
-          id="outlined-required"
-          label="Nom"
-          defaultValue=""
-          className="mb-4"
-        />
-        <TextField
-          required
-          fullWidth
-          id="outlined-required"
-          label="Email"
-          type="email"
-          defaultValue=""
-          className="mb-4"
-        />
-        <TextField
-          fullWidth
-          id="outlined-multiline-static"
-          label="Message"
-          multiline
-          rows={4}
-          defaultValue=""
-          className="mb-4"
-        />
-      </div>
-      <Button
-        variant="contained"
-        className="bg-blue-500 hover:bg-blue-700 text-white">
-        Envoyer
-      </Button>
+        p: 4,
+      }}>
+      <h2>Contactez-Moi</h2>
+      <p>N&apos;hésitez pas à me contacter pour toute question ou demande!</p>
+
+      <Link href={`mailto:${email}`} underline="none">
+        <Button variant="contained" className="btn btn-active btn-primary">
+          Envoyer un Email
+        </Button>
+      </Link>
+
+      <p>Sinon vous pouvez me retrouver sur LinkedIn</p>
+      <Box sx={{ mt: 4, display: "flex", gap: 2 }}>
+        <Link href="https://linkedin.com/in/maximilienthiry" target="_blank">
+          <LinkedInIcon sx={{ fontSize: 60 }} />
+        </Link>
+      </Box>
     </Box>
   );
 };
 
-export default Contact;
+export default ContactPage;

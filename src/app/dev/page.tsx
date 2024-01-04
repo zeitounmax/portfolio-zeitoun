@@ -9,18 +9,21 @@ const Dev = () => {
         Vous trouverez sur cette page, mes projets en développement web
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Grid container */}
+      <div className="flex flex-wrap justify-center gap-4">
         {devProjects.map((project) => (
           <div
             key={project.id}
-            className="border rounded-lg p-4 hover:shadow-lg transition duration-300">
-            <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-            <p className="mb-4">{project.description}</p>
-            <a
-              href={project.link}
-              className="text-blue-600 hover:text-blue-800 transition duration-200">
-              En savoir plus
-            </a>
+            className="card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 p-4 mx-2">
+            <div className="card-body">
+              <h2 className="card-title">{project.title}</h2>
+              <p>{project.description}</p>
+              <div className="card-actions justify-end">
+                <a href={project.link} className="btn btn-primary">
+                  En savoir plus
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
