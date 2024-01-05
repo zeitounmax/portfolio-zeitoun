@@ -49,8 +49,7 @@ const About = () => {
         </ul>
         <p className="mt-4 text-xl text-justify">
           Pour plus d&apos;informations, n&apos;hésitez pas à consulter mon CV
-          ou ma page Pour plus d&apos;informations, nhésitez pas à consulter mon
-          CV ou ma page Linkedin.
+          ou ma page Linkedin.
         </p>
         <div className="mt-4">
           <Link href="https://drive.google.com/file/d/1mnKYRWYXLlhqt1ICDyUhBjCZZGhobYqV/view?usp=sharing">

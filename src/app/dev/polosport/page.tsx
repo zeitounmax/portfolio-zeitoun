@@ -4,19 +4,19 @@ import Link from "next/link";
 
 const Polosport = () => {
   return (
-    <div>
-      <h1>Polosport</h1>
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Polosport</h1>
       <Image
         src="/polologo.png"
         alt="Logo du projet Polosport"
-        width={100}
-        height={100}
+        width={500}
+        height={300}
         layout="responsive"
       />
 
-      <div>
-        <h2>Contexte du projet</h2>
-        <p>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold mb-3">Contexte du projet</h2>
+        <p className="text-justify mb-4">
           Pour mon projet de fin d&apos;études, j&apos;ai eu l&apos;idée de
           créer une plateforme semblable à YouTube, mais dédiée aux sports.
           Cette plateforme utilise React, Node, Express, ainsi que Argon2 et
@@ -26,10 +26,10 @@ const Polosport = () => {
         </p>
       </div>
 
-      <div>
-        <h4>Comment utiliser le projet</h4>
-        <p>Pour utiliser le projet, suivez ces étapes :</p>
-        <ol>
+      <div className="mb-4">
+        <h4 className="text-lg font-semibold">Comment utiliser le projet</h4>
+        <p className="mb-2">Pour utiliser le projet, suivez ces étapes :</p>
+        <ol className="list-decimal list-inside">
           <li>Clonez le projet sur votre machine locale.</li>
           <li>
             Installez les modules Node nécessaires en exécutant la commande{" "}
@@ -42,8 +42,10 @@ const Polosport = () => {
         </ol>
       </div>
 
-      <div>
-        <h2>Fonctionnalités de la plateforme</h2>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold mb-3">
+          Fonctionnalités de la plateforme
+        </h2>
         <ul>
           <li>
             <strong>Diversité des Sports :</strong> La plateforme propose des
@@ -87,10 +89,14 @@ const Polosport = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Lien vers le dépot du projet</h2>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold">Lien vers le dépot du projet</h2>
         <Link href="https://github.com/zeitounmax/PoloSport">
-          <span role="link" tabIndex={0} style={{ cursor: "pointer" }}>
+          <span
+            role="link"
+            className="text-blue-600 hover:text-blue-800"
+            tabIndex={0}
+            style={{ cursor: "pointer" }}>
             Lien vers le dépot du projet Github
           </span>
         </Link>

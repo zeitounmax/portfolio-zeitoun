@@ -4,25 +4,27 @@ import Link from "next/link";
 
 const tomoto = () => {
   return (
-    <div>
-      <h1>Tomoto Times</h1>
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Tomoto Times</h1>
       <Image
         src="/tomato.png"
         alt="Logo tomato times"
-        width={120}
-        height={120}
+        width={500}
+        height={300}
         layout="responsive"
       />
-      <p>
+      <p className="text-justify mb-4">
         Dossier de présentation d’un projet de fin de formation pour l’obtention
         du titre Concepteur UI . Je suis parti sur un projet de méthode pomodoro
         et de développement personnel. Les logiciels utilisés étaient
         Figma,Wordpress,mamp,Adobe suite … (Update: Révision du prototype qui
         est passé dans sa Version3)
       </p>
-      <div>
-        <h2>C&apos;est quoi la méthode Pomodoro?</h2>
-        <p>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold italic mb-3">
+          C&apos;est quoi la méthode Pomodoro?
+        </h2>
+        <p className="text-justify">
           La méthode Pomodoro est une technique de gestion du temps développée
           par Francesco Cirillo à la fin des années 1980. Le concept est simple
           mais efficace : il s&apos;agit de diviser le travail en périodes de
@@ -44,19 +46,27 @@ const tomoto = () => {
           concentration sans s&apos;épuiser.
         </p>
       </div>
-      <div>
-        <h2>Lien vers le prototype</h2>
-        <ul>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold mb-3">Lien vers le prototype</h2>
+        <ul className="list-disc list-inside">
           <li>
             <Link href="https://www.figma.com/file/wSWUG56JLzj2S3FejJJEun/Tomoto-Times-V3?type=design&node-id=0-1&mode=design">
-              <span role="link" tabIndex={0} style={{ cursor: "pointer" }}>
+              <span
+                role="link"
+                className="text-blue-600 hover:text-blue-800"
+                tabIndex={0}
+                style={{ cursor: "pointer" }}>
                 Lien vers le prototype.
               </span>
             </Link>
           </li>
           <li>
             <Link href="https://drive.google.com/drive/folders/1sbMhmRSKkVIvhh9jfACnmIpWv0IIyzXN?usp=sharing">
-              <span role="link" tabIndex={0} style={{ cursor: "pointer" }}>
+              <span
+                role="link"
+                className="text-blue-600 hover:text-blue-800"
+                tabIndex={0}
+                style={{ cursor: "pointer" }}>
                 Lien vers les éléments du projet{" "}
               </span>
             </Link>

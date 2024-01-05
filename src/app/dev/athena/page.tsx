@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Athena = () => {
   return (
-    <div>
-      <h1>Athena Annuaire</h1>
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Athena Annuaire</h1>
       <Image
         src="/athena.png"
         alt="Logo Athena"
@@ -13,7 +13,7 @@ const Athena = () => {
         height={120}
         layout="responsive"
       />
-      <p>
+      <p className="mb-4 text-justify">
         Athena Annuaire est un projet d’annuaire regroupant les personnes ayant
         participé à la mini formation sur l’initiation au code à la Wild Code
         School de Reims en décembre 2022. Ce projet a été développé en utilisant
@@ -28,18 +28,26 @@ const Athena = () => {
         vous souhaitez en savoir plus sur le projet Athena Annuaire ou si vous
         avez d’autres questions à ce sujet, n’hésitez pas à me le faire savoir.
       </p>
-      <h2>Liens Utiles</h2>
-      <ul>
+      <h2 className="text-xl font-semibold mb-3">Liens Utiles</h2>
+      <ul className="list-disc list-inside">
         <li>
           <Link href="https://zeitounmax.github.io/athena/">
-            <span role="link" tabIndex={0} style={{ cursor: "pointer" }}>
+            <span
+              role="link"
+              className="text-blue-600 hover:text-blue-800"
+              tabIndex={0}
+              style={{ cursor: "pointer" }}>
               Lien vers le site Athena Annuaire
             </span>
           </Link>
         </li>
         <li>
           <Link href="https://github.com/zeitounmax/athena">
-            <span role="link" tabIndex={0} style={{ cursor: "pointer" }}>
+            <span
+              role="link"
+              className="text-blue-600 hover:text-blue-800"
+              tabIndex={0}
+              style={{ cursor: "pointer" }}>
               Lien vers la page de Github du projet Athena Annuaire
             </span>
           </Link>
