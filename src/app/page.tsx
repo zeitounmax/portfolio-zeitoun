@@ -6,15 +6,31 @@ import logohomedata from "@/data/logoHomeData";
 const home = () => {
   return (
     <div className="flex flex-col items-center p-4">
-      <div className="text-center mb-8 w-full">
-        <h1 className="text-4xl font-bold mb-4">Bienvenue sur mon portfolio</h1>
-        <p className="text-lg">
-          Développeur web vivant en France, je suis à la recherche de projet, de
-          mission ou de proposition. Ayant aussi des expériences en UI/UX, je
-          peux aussi proposer mon expertise.
+      <h1 className="text-4xl font-bold mb-4">Bienvenue sur mon portfolio</h1>
+
+      <div className="mb-8 w-full flex flex-col md:flex-row justify-center items-center">
+        <div className="flex justify-center mb-4 md:mb-0">
+          <Image
+            src="/avatar.png"
+            alt="logo du groupe"
+            width={150}
+            height={150}
+            className="rounded-full w-24 h-24 md:w-36 md:h-36"
+            layout="responsive"
+          />
+        </div>
+        <p className="text-lg text-center md:text-left p-4  rounded shadow-sm max-w-md mx-auto md:mx-0">
+          Développeur web et passionné de UI/UX en France, je suis au début de
+          mon parcours professionnel. Mon objectif ? Gagner en expérience et
+          m&apos;épanouir dans ce domaine dynamique. Je recherche des projets
+          stimulants pour aiguiser mes compétences et apporter mon énergie et
+          mes idées novatrices. Je suis ouvert à des missions qui me permettront
+          d&apos;apprendre et de grandir. Si vous avez besoin d&apos;un jeune
+          développeur enthousiaste, prêt à relever de nouveaux défis, je suis
+          votre candidat idéal. Contactez-moi pour explorer ensemble les
+          possibilités créatives en développement web et UI/UX !
         </p>
       </div>
-
       <div className="mb-8 w-full">
         <h1 className="text-3xl font-bold mb-4 text-center">
           Mes Projets (Sélection de projets)
@@ -52,15 +68,6 @@ const home = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div>
-        <h1 className="text-3xl font-bold mb-4">
-          Intéresser pour travailler ensemble ?
-        </h1>
-        <p className="text-lg">
-          Vous trouverez mon CV sur la page de Contact, mes réseaux sociaux mais
-          aussi un formulaire de contact pour avoir des informations
-        </p>
       </div>
     </div>
   );
