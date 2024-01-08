@@ -38,7 +38,7 @@ const maisonconseils = () => {
         permis de faciliter le processus de création du site.
       </p>
       <div className="mb-8">
-        <div className="mb-4">
+        <div className="mb-4 max-w-5xl mx-auto">
           <Image
             src="/maison-website.png"
             alt="Le site web de la maison conseils citoyens de charleville-mézières"
