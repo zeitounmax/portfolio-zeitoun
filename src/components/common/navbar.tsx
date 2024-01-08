@@ -1,40 +1,70 @@
 "use client";
-
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import navbarData from "@/data/navBarData";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+      <div className="container flex flex-wrap justify-between items-center mx-auto">
         <Link href="/" passHref>
-          <span className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer">
+          <span className="flex items-center">
             <Image src="/logo.svg" width={50} height={50} alt="Website Logo" />
           </span>
         </Link>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-6 h-6"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }></path>
+          </svg>
+        </button>
+
+        <div
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } w-full md:block md:w-auto`}
+          id="navbar-dropdown">
+          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             {navbarData.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="mt-3 md:mt-0">
                 {item.dropdown ? (
                   <div className="relative">
-                    <span
+                    <button
                       onClick={() =>
                         setIsProjectsDropdownOpen(!isProjectsDropdownOpen)
                       }
-                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 cursor-pointer md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                      className="text-gray-700 hover:bg-gray-50 rounded-md px-3 py-2">
                       {item.title}
-                    </span>
+                    </button>
                     {isProjectsDropdownOpen && (
-                      <ul className="absolute left-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+                      <ul className="absolute z-10 left-0 w-48 py-1 mt-1 bg-white shadow-lg border border-gray-100">
                         {item.dropdown.map((subItem) => (
                           <li key={subItem.title}>
                             <Link href={subItem.path} passHref>
-                              <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer dark:text-gray-200 dark:hover:bg-gray-700">
+                              <span className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">
                                 {subItem.title}
                               </span>
                             </Link>
@@ -45,7 +75,7 @@ const Navbar = () => {
                   </div>
                 ) : (
                   <Link href={item.path} passHref>
-                    <span className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 cursor-pointer md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    <span className="block py-2 px-3 text-gray-700 hover:bg-gray-50 rounded-md">
                       {item.title}
                     </span>
                   </Link>
