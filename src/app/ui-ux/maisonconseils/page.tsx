@@ -11,7 +11,7 @@ const maisonconseils = () => {
       <div className="mb-4 max-w-xs mx-auto">
         <Image
           src="/logomaison.png"
-          alt="Logo chez Ruri"
+          alt="Logo Maison conseils citoyens"
           width={500}
           height={300}
           layout="responsive"
@@ -22,6 +22,18 @@ const maisonconseils = () => {
         Juillet 2022 à la maison des conseils citoyens à Charleville Mézières ,
         dans le cadre de ma formation de conception UI/UX .
       </p>
+      <div>
+        {" "}
+        <div className="mb-4 max-w-5xl mx-auto ">
+          <Image
+            src="/maison-proto.png"
+            alt="Prototype de la Maison des Conseils Citoyens "
+            width={500}
+            height={300}
+            layout="responsive"
+          />
+        </div>
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold">Lien vers le prototype</h2>
         <Link href="https://www.figma.com/file/dxSIMWByLT1F3GBR6CYyj8/maquette-site-La-maison-des-citoyens?type=design&node-id=0-1&mode=design&t=cGpv7RB0VMatqnjX-0">

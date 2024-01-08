@@ -22,6 +22,15 @@ const recytech = () => {
         midi au premier jour et à mon retour de, à titre personnel le prototype
         de ce dernier .
       </p>
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/recy-prototype.png"
+          alt="Prototype de la Maison des Conseils Citoyens "
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold">Lien vers le prototype</h2>
         <Link href="https://www.figma.com/file/sNC2xDDHDAynn4UUt8xXz3/hackathon2_Prototype?type=design&node-id=0-1&mode=design&t=1PcUcdGM9Aqa56fE-0">

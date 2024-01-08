@@ -20,6 +20,15 @@ const chezruri = () => {
         une boutique en ligne de plantes. Ceci est la première version du
         prototype.
       </p>
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/ruri-prototype.png"
+          alt="Prototype de chez Ruri "
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4">Ruri est une spitzloup</p>
       <div className="mb-4">
         <h2 className="text-xl font-semibold">Lien vers le prototype</h2>

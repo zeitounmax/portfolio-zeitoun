@@ -21,13 +21,15 @@ const wildeats = () => {
         la forme d’un annuaire des meilleurs restaurants se trouvant dans les
         environs.
       </p>
-      <Image
-        src="/wildeats.png"
-        alt="logo du premier projet"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/wildeats.png"
+          alt="logo du premier projet"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-3">Langage de code utilisé </h2>
         <ul className="list-disc list-inside">

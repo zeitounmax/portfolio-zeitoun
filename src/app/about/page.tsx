@@ -20,7 +20,7 @@ const About = () => {
       <h1 className="text-4xl font-bold mb-4">Qui je suis ?</h1>
       <p className="mb-4 text-md text-justify">
         <strong className="text-3xl">J</strong>e me présente, Thiry Maximilien,
-        j&apos;ai 33 ans et je viens des Ardennes. J&apos;ai travaillé dans
+        j&apos;ai 34 ans et je viens des Ardennes. J&apos;ai travaillé dans
         plusieurs entreprises de restauration tout en effectuant des petits
         boulots. Cependant, pendant la période du Covid, j&apos;ai décidé de
         changer de voie professionnelle et de me lancer dans des domaines qui me

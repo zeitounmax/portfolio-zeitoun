@@ -23,6 +23,15 @@ const wildoutv2 = () => {
         du projet. Avec de nouvelles fonctionallités mais aussi, une refonte
         totalement du projet.
       </p>
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/wo-prototype.png"
+          alt="Prototype version 2 de WildOut "
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
 
       <div className="mb-4">
         <h2 className="text-xl font-semibold">Lien vers le prototype </h2>

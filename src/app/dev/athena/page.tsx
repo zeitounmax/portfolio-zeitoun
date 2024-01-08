@@ -30,6 +30,15 @@ const Athena = () => {
         vous souhaitez en savoir plus sur le projet Athena Annuaire ou si vous
         avez d’autres questions à ce sujet, n’hésitez pas à me le faire savoir.
       </p>
+      <div className=" mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/athena-website.png"
+          alt="Logo Athena"
+          width={120}
+          height={120}
+          layout="responsive"
+        />
+      </div>
       <h2 className="text-xl font-semibold mb-3">Liens Utiles</h2>
       <ul className="list-disc list-inside">
         <li>

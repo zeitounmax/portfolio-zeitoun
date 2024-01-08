@@ -16,12 +16,12 @@ const wildout = () => {
       </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-3">Wild Out ? </h2>
-        <div>
+        <div className="mb-4 max-w-5xl mx-auto ">
           <Image
             src="/wildout1.png"
             alt="Capture d'écran du prototype du site"
-            width={500}
-            height={300}
+            width={1024}
+            height={500}
             layout="responsive"
           />
         </div>

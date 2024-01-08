@@ -22,6 +22,15 @@ const tomoto = () => {
         Figma,Wordpress,mamp,Adobe suite … (Update: Révision du prototype qui
         est passé dans sa Version3)
       </p>
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/to-prototype.png"
+          alt="Prototype tomoto-times "
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold italic mb-3">
           C&apos;est quoi la méthode Pomodoro?

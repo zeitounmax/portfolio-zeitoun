@@ -24,13 +24,15 @@ const antealice = () => {
           personnalisée avec l’éditeur Beaver Builder, tout en intégrant des
           éléments sur mesure en HTML, CSS et JavaScript.
         </p>
-        <Image
-          src="/website.png"
-          alt="logo du groupe"
-          width={500}
-          height={300}
-          layout="responsive"
-        />
+        <div className="mb-4 max-w-5xl mx-auto ">
+          <Image
+            src="/website.png"
+            alt="site web "
+            width={500}
+            height={300}
+            layout="responsive"
+          />
+        </div>
         <p className="text-justify mb-4">
           Le thème du site a été créé de toutes pièces, avec des animations et
           des effets visuels conçus manuellement. Les titres et les textes ont

@@ -6,19 +6,31 @@ const cholula = () => {
   return (
     <div className="p-4 mb-4">
       <h1 className="text-2xl font-bold mb-4">Cholula Restaurant</h1>
-      <Image
-        src="/cholula.png"
-        alt="Logo du projet Polosport"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/cholula.png"
+          alt="Logo du projet Polosport"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
+
       <p className="mb-4 text-justify">
         Exercice qui a était fait pour valider le CCP pour le passage de
         l’examen de Concept design UI en 2022. Les outils utiliser sont Figma et
         la suite Adobe (PhotoShop,Illustrator,After Effects). Vous trouverez en
         plus du lien vers le prototype
       </p>
+      <div className="mb-4 max-w-5xl mx-auto ">
+        <Image
+          src="/cho-prototype.png"
+          alt="Prototype de la Maison des Conseils Citoyens "
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold">Lien vers le prototype</h2>
         <ul className="list-disc list-inside">
