@@ -4,10 +4,9 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import ContactForm from "@/components/common/formcontact"; // Assurez-vous que le chemin d'importation est correct
 
 const ContactPage = () => {
-  const email = "maximilien.thiry1@gmail.com";
-
   return (
     <Box
       sx={{
@@ -17,16 +16,17 @@ const ContactPage = () => {
         justifyContent: "center",
         p: 4,
       }}>
-      <h2>Contactez-Moi</h2>
+      <h2 className="text-2xl font-bold">Contactez-Moi</h2>
       <p>N&apos;hésitez pas à me contacter pour toute question ou demande!</p>
+      <div className="mb-4">
+        {" "}
+        <ContactForm />
+      </div>
 
-      <Link href={`mailto:${email}`} underline="none">
-        <Button variant="contained" className="btn btn-active btn-primary">
-          Envoyer un Email
-        </Button>
-      </Link>
-
-      <p>Sinon vous pouvez me retrouver sur LinkedIn</p>
+      <p>
+        Vous pouvez également me contacter directement par email ou me trouver
+        sur LinkedIn :
+      </p>
       <Box sx={{ mt: 4, display: "flex", gap: 2 }}>
         <Link href="https://linkedin.com/in/maximilienthiry" target="_blank">
           <LinkedInIcon sx={{ fontSize: 60 }} />
