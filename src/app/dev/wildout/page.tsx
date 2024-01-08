@@ -5,22 +5,26 @@ const wildout = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">WildOut</h1>
-      <Image
-        src="/wildout-logo.png"
-        alt="Logo du projet"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
-      <div className="mb-4">
-        <h2 className="text-xl font-semibold mb-3">Wild Out ? </h2>
+      <div className="mb-4 max-w-xs mx-auto">
         <Image
-          src="/wildout1.png"
-          alt="Capture d'écran du prototype du site"
+          src="/wildout-logo.png"
+          alt="Logo du projet"
           width={500}
           height={300}
           layout="responsive"
         />
+      </div>
+      <div className="mb-4">
+        <h2 className="text-xl font-semibold mb-3">Wild Out ? </h2>
+        <div>
+          <Image
+            src="/wildout1.png"
+            alt="Capture d'écran du prototype du site"
+            width={500}
+            height={300}
+            layout="responsive"
+          />
+        </div>
         <p className="mb-4 text-justify">
           WildOut est un projet réalisé dans le cadre du Project 2 de la Wild
           Code School. Vous ne savez pas quoi faire aujourd’hui ? Et si vous

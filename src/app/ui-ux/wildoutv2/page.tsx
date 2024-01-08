@@ -7,13 +7,15 @@ const wildoutv2 = () => {
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Wild Out V2</h1>
       <em>Le logiciel comment je l&apos;aurais vu </em>
-      <Image
-        src="/wildout-logo.png"
-        alt="Logo du projet"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/wildout-logo.png"
+          alt="Logo du projet"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
 
       <h2 className="text-xl font-semibold mb-3">Context</h2>
       <p className="text-justify mb-4">

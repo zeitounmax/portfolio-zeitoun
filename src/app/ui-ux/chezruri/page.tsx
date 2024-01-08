@@ -6,13 +6,15 @@ const chezruri = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Protype Chez Ruri</h1>
-      <Image
-        src="/ruri.png"
-        alt="Logo chez Ruri"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/ruri.png"
+          alt="Logo chez Ruri"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         Petit exercice de prototypage pour une amie envisageant d&apos;ouvrir
         une boutique en ligne de plantes. Ceci est la première version du

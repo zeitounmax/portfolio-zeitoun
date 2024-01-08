@@ -7,13 +7,15 @@ const About = () => {
   return (
     <div className="p-4">
       <div className="mb-4">
-        <Image
-          src="/me.png"
-          alt="Maximilien Thiry"
-          width={100}
-          height={100}
-          layout="responsive"
-        />
+        <div className="mb-4 max-w-xs mx-auto">
+          <Image
+            src="/me.png"
+            alt="Maximilien Thiry"
+            width={100}
+            height={100}
+            layout="responsive"
+          />
+        </div>
       </div>
       <h1 className="text-4xl font-bold mb-4">Qui je suis ?</h1>
       <p className="mb-4 text-md text-justify">

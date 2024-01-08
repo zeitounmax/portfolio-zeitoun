@@ -6,13 +6,15 @@ const Athena = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Athena Annuaire</h1>
-      <Image
-        src="/athena.png"
-        alt="Logo Athena"
-        width={120}
-        height={120}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/athena.png"
+          alt="Logo Athena"
+          width={120}
+          height={120}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         Athena Annuaire est un projet d’annuaire regroupant les personnes ayant
         participé à la mini formation sur l’initiation au code à la Wild Code

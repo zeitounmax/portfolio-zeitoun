@@ -6,13 +6,15 @@ const wildeats = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">WildEats</h1>
-      <Image
-        src="/wildlogo.png"
-        alt="logo du premier projet"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/wildlogo.png"
+          alt="logo du premier projet"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         WildEats est un premier projet qui a été réalisé dans le cadre de ma
         formation, comprenant trois projets au total. Ce projet se présente sous

@@ -6,13 +6,15 @@ const Polosport = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Polosport</h1>
-      <Image
-        src="/polologo.png"
-        alt="Logo du projet Polosport"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/polologo.png"
+          alt="Logo du projet Polosport"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
 
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-3">Contexte du projet</h2>

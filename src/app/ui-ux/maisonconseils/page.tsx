@@ -8,13 +8,15 @@ const maisonconseils = () => {
       <h1 className="text-2xl font-bold mb-4">
         La Maison des Conseils Citoyens
       </h1>
-      <Image
-        src="/logomaison.png"
-        alt="Logo chez Ruri"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/logomaison.png"
+          alt="Logo chez Ruri"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         Voici le prototype que j&apos;ai réalisé avec Figma lors de mon stage en
         Juillet 2022 à la maison des conseils citoyens à Charleville Mézières ,

@@ -8,6 +8,15 @@ const maisonconseils = () => {
       <h1 className="text-2xl font-bold mb-4">
         La Maison des Conseils Citoyens
       </h1>
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/logomaison.png"
+          alt="Le site web de la maison conseils citoyens de charleville-mézières"
+          width={300}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         <strong className="text-3xl">L</strong>a Maison des Conseils Citoyens
         est un projet de création d’un site internet pour une association,

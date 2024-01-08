@@ -6,13 +6,15 @@ const antealice = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Ante Alice</h1>
-      <Image
-        src="/antealice.png"
-        alt="logo du groupe"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/antealice.png"
+          alt="logo du groupe"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-3">Contexte et Concept :</h2>
         <p className="text-justify mb-4">

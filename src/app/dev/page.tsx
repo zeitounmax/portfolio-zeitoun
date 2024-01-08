@@ -20,8 +20,8 @@ const Dev = () => {
                 <Image
                   src={project.src}
                   alt={`Logo de ${project.title}`}
-                  width={100}
-                  height={100}
+                  width={120}
+                  height={120}
                   layout="responsive"
                 />
               )}

@@ -6,13 +6,15 @@ const tomoto = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Tomoto Times</h1>
-      <Image
-        src="/tomato.png"
-        alt="Logo tomato times"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/tomato.png"
+          alt="Logo tomato times"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="text-justify mb-4">
         Dossier de présentation d’un projet de fin de formation pour l’obtention
         du titre Concepteur UI . Je suis parti sur un projet de méthode pomodoro

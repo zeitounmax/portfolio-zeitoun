@@ -6,13 +6,15 @@ const recytech = () => {
   return (
     <div className="p-4 mb-4">
       <h1 className="text-2xl font-bold mb-4">RecyTech</h1>
-      <Image
-        src="/recylogo.png"
-        alt="Logo chez Ruri"
-        width={500}
-        height={300}
-        layout="responsive"
-      />
+      <div className="mb-4 max-w-xs mx-auto">
+        <Image
+          src="/recylogo.png"
+          alt="Logo chez Ruri"
+          width={500}
+          height={300}
+          layout="responsive"
+        />
+      </div>
       <p className="mb-4 text-justify">
         Prototype réalisé sous Figma. J’avais fait le Wireframe pour le
         Hackathon 2 organisé par la Wild Code School et Emmaüs Connect . Je
