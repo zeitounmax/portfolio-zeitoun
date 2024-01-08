@@ -18,7 +18,8 @@ const chezruri = () => {
       <p className="mb-4 text-justify">
         Petit exercice de prototypage pour une amie envisageant d&apos;ouvrir
         une boutique en ligne de plantes. Ceci est la première version du
-        prototype.
+        prototype. On retrouve les éléments eseentiels d&apos;une boutique en
+        ligne.
       </p>
       <div className="mb-4 max-w-5xl mx-auto ">
         <Image
