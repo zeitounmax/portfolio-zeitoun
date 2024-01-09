@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.halo-effect:hover {
+  box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6);
+}

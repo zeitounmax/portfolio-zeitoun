@@ -39,7 +39,7 @@ const home = () => {
           {homeData.map((project) => (
             <div
               key={project.id}
-              className="card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 p-4 mx-2">
+              className="card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-base-100 shadow-xl hover:shadow-halo transition-shadow duration-300 p-4 mx-2">
               <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
                 <p>{project.description}</p>
