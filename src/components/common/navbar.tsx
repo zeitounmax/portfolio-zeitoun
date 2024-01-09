@@ -3,6 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import navbarData from "@/data/navBarData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faGitlab,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,6 +88,30 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            {/* Icônes de réseaux sociaux */}
+            <li className="mt-3 md:mt-0 flex items-center space-x-4">
+              <a
+                href="https://www.linkedin.com/in/maximilienthiry/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="halo-effect">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                href="https://github.com/zeitounmax"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="halo-effect">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a
+                href="https://gitlab.com/zeitounmax"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="halo-effect">
+                <FontAwesomeIcon icon={faGitlab} />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import devProjects from "../../data/devProjectsData"; // Mettez à jour le chemin selon l'arborescence de votre projet
 import Image from "next/image";
 
+
 const Dev = () => {
   return (
     <div className="p-4">
