@@ -54,11 +54,14 @@ const About = () => {
           ou ma page Linkedin.
         </p>
         <div className="mt-4">
-          <Link
-            href="/cv/CV_Thiry_Maximilien_FR.pdf"
-            download="CV_Thiry_Maximilien_FR.pdf">
-            <span className="btn btn-primary">Mon CV</span>
-          </Link>
+          <div className="mt-4">
+            <a
+              href="/cv/CV_Thiry_Maximilien_FR.pdf"
+              download="CV_Thiry_Maximilien_FR.pdf"
+              className="btn btn-primary">
+              <span>Mon CV</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
