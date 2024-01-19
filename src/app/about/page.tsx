@@ -54,7 +54,9 @@ const About = () => {
           ou ma page Linkedin.
         </p>
         <div className="mt-4">
-          <Link href="https://drive.google.com/file/d/1mnKYRWYXLlhqt1ICDyUhBjCZZGhobYqV/view?usp=sharing">
+          <Link
+            href="/cv/CV_Thiry_Maximilien_FR.pdf"
+            download="CV_Thiry_Maximilien_FR.pdf">
             <span className="btn btn-primary">Mon CV</span>
           </Link>
         </div>
