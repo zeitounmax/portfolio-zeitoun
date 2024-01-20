@@ -28,7 +28,7 @@ const home = () => {
           d&apos;apprendre et de grandir. Si vous avez besoin d&apos;un jeune
           développeur enthousiaste, prêt à relever de nouveaux défis, je suis
           votre candidat idéal. Contactez-moi pour explorer ensemble les
-          possibilités créatives en développement web et UI/UX !
+          possibilités créatives en développement web et UI/UX!
         </p>
       </div>
       <div className="mb-8 w-full">

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           réservés.
         </p>
         <div>
-          <p>Codée avec Next❤️TypeScript</p>
+          <p>Codée avec Next et TypeScript</p>
         </div>
       </div>
     </footer>
