@@ -66,7 +66,8 @@ const tomoto = () => {
                 role="link"
                 className="text-blue-600 hover:text-blue-800"
                 tabIndex={0}
-                style={{ cursor: "pointer" }}>
+                style={{ cursor: "pointer" }}
+              >
                 Lien vers le prototype.
               </span>
             </Link>
@@ -77,7 +78,8 @@ const tomoto = () => {
                 role="link"
                 className="text-blue-600 hover:text-blue-800"
                 tabIndex={0}
-                style={{ cursor: "pointer" }}>
+                style={{ cursor: "pointer" }}
+              >
                 Lien vers les éléments du projet{" "}
               </span>
             </Link>
