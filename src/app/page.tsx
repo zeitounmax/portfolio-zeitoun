@@ -3,35 +3,38 @@ import homeData from "@/data/homeData";
 import Image from "next/image";
 import logohomedata from "@/data/logoHomeData";
 
-const home = () => {
+const Home = () => {
   return (
-    <div className="flex flex-col items-center p-4">
-      <h1 className="text-4xl font-bold mb-4">Bienvenue sur mon portfolio</h1>
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold mb-8 text-center">
+        Bienvenue sur ZeitounCode
+      </h1>
 
-      <div className="mb-8 w-full flex flex-col md:flex-row justify-center items-center">
-        <div className="flex justify-center mb-4 md:mb-0">
+      <div className="flex flex-col md:flex-row justify-center items-center mb-8">
+        <div className="mb-4 md:mb-0 flex justify-center items-end">
           <Image
-            src="/avatar.png"
+            src="/header.jpg"
             alt="logo du groupe"
             width={150}
             height={150}
-            className="rounded-full w-24 h-24 md:w-36 md:h-36"
+            className="w-24 h-24 md:w-36 md:h-36"
             layout="responsive"
           />
         </div>
-        <p className="text-lg text-center md:text-left p-4  rounded shadow-sm max-w-md mx-auto md:mx-0">
-          Développeur web et passionné de UI/UX en France, je suis au début de
-          mon parcours professionnel. Mon objectif ? Gagner en expérience et
-          m&apos;épanouir dans ce domaine dynamique. Je recherche des projets
-          stimulants pour aiguiser mes compétences et apporter mon énergie et
-          mes idées novatrices. Je suis ouvert à des missions qui me permettront
-          d&apos;apprendre et de grandir. Si vous avez besoin d&apos;un jeune
-          développeur enthousiaste, prêt à relever de nouveaux défis, je suis
-          votre candidat idéal. Contactez-moi pour explorer ensemble les
-          possibilités créatives en développement web et UI/UX!
+      </div>
+      <div className="mb-8 text-lg text-center">
+        <p>
+          Bienvenue sur ZeitounCode ! 👋 Je suis un développeur web passionné
+          d&apos;UI/UX en France, au début de mon parcours professionnel. Mon
+          objectif ? Gagner en expérience et m&apos;épanouir dans ce domaine
+          dynamique. Je recherche des projets stimulants pour affûter mes
+          compétences et apporter des idées novatrices. Ouvert à des missions
+          propices à l&apos;apprentissage et à la croissance. Contactez-moi pour
+          explorer ensemble les opportunités créatives en développement web et
+          UI/UX ! 💻✨
         </p>
       </div>
-      <div className="mb-8 w-full">
+      <div className="mb-8">
         <h1 className="text-3xl font-bold mb-4 text-center">
           Mes Projets (Sélection de projets)
         </h1>
@@ -54,10 +57,11 @@ const home = () => {
           ))}
         </div>
       </div>
+
       <div className="flex flex-col items-center p-4">
         <h2 className="text-3xl font-bold mb-4">Mes outils favoris</h2>
         <p className="text-lg">
-          Voici les langages, frameworks etc... que j&apos;utilise{" "}
+          Voici les langages, frameworks, etc., que j&apos;utilise
         </p>
 
         <div className="flex flex-wrap justify-center">
@@ -75,4 +79,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
