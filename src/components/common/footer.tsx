@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
       }`}
     >
       <div>
-        <Link href="/" passHref>
-          <span className="flex items-center">
+        <Link href="/">
+          <span className="flex items-center cursor-pointer">
             <Image
               src={isDarkTheme ? "/footer-w.svg" : "/footer.svg"}
               width={100}
@@ -45,6 +45,22 @@ const Footer: React.FC = () => {
         <p className="text-white">
           &copy; {new Date().getFullYear()} ZeitounCode. Tous droits réservés.
         </p>
+        <ul className="flex justify-center space-x-4 mt-2">
+          <li>
+            <Link href="/mentions">
+              <span className="text-white hover:underline cursor-pointer">
+                Mentions Légales
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/polconf">
+              <span className="text-white hover:underline cursor-pointer">
+                Politique de Confidentialité
+              </span>
+            </Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );
